@@ -1,0 +1,6 @@
+{
+  "name": "Aura Design Academy",
+  "description": "Premium online design school with dashboard, courses, and real-time feedback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

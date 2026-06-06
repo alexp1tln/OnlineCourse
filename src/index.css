@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+  
+  --color-aura-50: #fdf4ff;
+  --color-aura-100: #fae8ff;
+  --color-aura-200: #f5d0fe;
+  --color-aura-300: #f0abfc;
+  --color-aura-400: #e879f9;
+  --color-aura-500: #d946ef;
+  --color-aura-600: #c026d3;
+  --color-aura-700: #a21caf;
+  --color-aura-800: #86198f;
+  
+  --color-charcoal-900: #1e1b4b;
+  --color-charcoal-800: #312e81;
+  --color-charcoal-700: #4338ca;
+  
+  --color-background-dark: #1e1b4b; /* Deep Indigo */
+  --color-surface-dark: #312e81; /* Indigo 800 */
+  --color-border-dark: #4f46e5; /* Indigo 600 - brighter border */
+
+  --color-accent-blue: #0ea5e9;
+  --color-accent-yellow: #f59e0b;
+  --color-accent-green: #10b981;
+}
+
+html { scroll-behavior: smooth; }
+body {
+  @apply bg-background-dark text-white font-sans antialiased selection:bg-aura-500 selection:text-white;
+}
+
+/* Custom Scrollbar for a premium but fun feel */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-background-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-dark);
+  border-radius: 6px;
+  border: 3px solid var(--color-background-dark);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-aura-500);
+}
